@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Margins-->
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="medium_margin">12dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+
+    <!--Swipe navigation-->
+    <dimen name="bottom_swipe_navigation_height">80dp</dimen>
+
+    <!--Card view stack-->
+    <dimen name="card_stack_view_elevation">10dp</dimen>
+    <dimen name="card_stack_padding">12dp</dimen>
+
+    <!--Card Movie-->
+    <dimen name="card_shadow_elevation">4dp</dimen>
+    <dimen name="card_movie_radius">20dp</dimen>
+    <dimen name="text_medium_sm">14sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+
+    <!--Text size-->
+    <dimen name="text_medium_paragraph">14sp</dimen>
+    <dimen name="enormous_margin">70dp</dimen>
+
+</resources>

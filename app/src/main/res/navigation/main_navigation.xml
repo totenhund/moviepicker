@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/moviePickerFragment">
+
+    <fragment
+        android:id="@+id/moviePickerFragment"
+        android:name="totenhund.com.moviepicker.picker.MoviePickerFragment"
+        android:label="MoviePickerFragment" >
+        <action
+            android:id="@+id/action_moviePickerFragment_to_cardDetailsFragment"
+            app:destination="@id/cardDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardDetailsFragment"
+        android:name="totenhund.com.moviepicker.card_details.CardDetailsFragment"
+        android:label="fragment_card_details"
+        tools:layout="@layout/fragment_card_details" >
+        <argument
+            android:name="movieId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_cardDetailsFragment_to_moviePickerFragment"
+            app:destination="@id/moviePickerFragment" />
+    </fragment>
+</navigation>

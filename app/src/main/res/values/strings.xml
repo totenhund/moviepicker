@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">moviepicker</string>
+
+    <!--Transition card movie to movie description-->
+    <string name="movie_card_transition">movie_card_%1$s</string>
+    <string name="movie_card_transition_name">movie_card_detail</string>
+
+    <!--Content description swipe navigation-->
+    <string name="cd_dislike_button">Dislike</string>
+    <string name="cd_rewind_button">Rewind</string>
+    <string name="cd_like_button">Like</string>
+    <string name="desc_sample">Фильм снят по мотивам повести известного американского писателя Стивена Кинга «Тайное окно, тайный сад». В центре сюжета известный писатель Морт Рейни, живущий в доме на берегу. В его жизни наступили далеко не самые лучшие времена: он разводится с женой и из-за бумажной волокиты не может полноценно приступить к работе над новой книгой. Однако вскоре происходит то, перед чем нынешние проблемы Морта кажутся просто детской шалостью. На пороге дома писателя появляется недружелюбно настроенный человек, который обвиняет его в плагиате. Незнакомец, представившийся как Кокни Шутер, сообщает Морту, что тот украл его рассказ. Однако Рейни уверен, что не делал этого, и всячески пытается отделаться от назойливого гостя. Но тот явно не собирается отступать, и продолжает преследовать Морта и его бывшую жену…</string>
+
+</resources>

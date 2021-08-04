@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+
+        <com.yuyakaido.android.cardstackview.CardStackView
+            android:id="@+id/stack_view"
+            android:longClickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/large_margin"
+            android:layout_marginTop="@dimen/enormous_margin"
+            android:layout_marginEnd="@dimen/large_margin"
+            android:layout_marginBottom="@dimen/enormous_margin"
+            android:clipToPadding="false"
+            android:elevation="@dimen/card_stack_view_elevation"
+            android:transitionGroup="true"
+            app:layout_constraintBottom_toTopOf="@id/rewind_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/card_view_movie" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:longClickable="false"
+            android:id="@+id/skip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:contentDescription="@string/cd_dislike_button"
+            android:src="@drawable/skip"
+            app:backgroundTint="@android:color/white"
+            app:fabSize="auto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rewind_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/ripple_left"
+            app:tint="@color/swipe_left" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:longClickable="false"
+            android:id="@+id/rewind_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:contentDescription="@string/cd_rewind_button"
+            android:src="@drawable/rewind"
+            app:backgroundTint="@android:color/white"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/ripple_rewind"
+            app:tint="@color/rewind"
+            tools:ignore="ImageContrastCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:longClickable="false"
+            android:id="@+id/like_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:contentDescription="@string/cd_like_button"
+            android:src="@drawable/like"
+            app:backgroundTint="@android:color/white"
+            app:fabSize="auto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rewind_button"
+            app:rippleColor="@color/ripple_right"
+            app:tint="@color/swipe_right" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
